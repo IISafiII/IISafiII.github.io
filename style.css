@@ -43,6 +43,12 @@ body {
     margin-top: 20px;
   }
  
+  h3 {
+    color: #04131f;
+    text-align: left;
+    margin-top: 20px;
+    
+  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -110,8 +116,10 @@ body {
   }
 
   .banner-area{
-    background-image: url(pics_for_website/headphones-6159058_1280.jpg);
-    height: 70vh;
+    background-image: url(pics_for_website/headphones-6159058_1280\ copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     width: 100%;
   }
   
@@ -124,4 +132,8 @@ body {
     flex-wrap: wrap;
     }
 }
- 
+ .list {
+    list-style-type: square;
+    justify-self: left;
+    padding: 20px
+ }
