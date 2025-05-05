@@ -1,0 +1,90 @@
+/* This styles the entire body of the page */
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+  .image {
+    height: auto;
+    float: left;
+  }
+  
+body {
+    font-family: Plantin, 'Times New Roman', Times, serif;
+    background-color: #dfefdf;
+    color: #202020;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+   width: 100%;
+   height: 100px;
+   background: #2f8bb2;
+   position: fixed;
+  }
+  .logo{
+    width: 100%;
+    line-height: 60px;
+   } 
+   .logo a {
+    font-size: 40px;
+    color: #e8eff5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left
+  }
+  /* This styles all <h1> headers */
+  h1 {
+    color: #020c13;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* This styles all paragraphs */
+  p {
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 0 15px;
+    text-align: center;
+
+  }
+  h2 {
+    color: #04131f;
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+  nav {
+    line-height: 100px;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: #dae0e5;
+  }
+
+  table {
+    border-collapse: separate;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    border: 1px solid #3a3838;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th, td {
+    background-color: #5595b0;
+  }
+  
+  .container{
+    float: inline-end ;
+    max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  }
+  .map{
+    width: 100%;
+    height: auto;
+  }
