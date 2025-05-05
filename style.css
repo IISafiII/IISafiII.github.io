@@ -3,40 +3,29 @@
     margin: 0;
     padding: 0;
 
-  }
-  .image {
-    height: auto;
-    float: left;
-  }
+}
   
 body {
     font-family: Plantin, 'Times New Roman', Times, serif;
-    background-color: #dfefdf;
+    background-color: rgb(194, 227, 238);
     color: #202020;
     margin: 0;
     padding: 0;
   }
   header {
    width: 100%;
-   height: 100px;
-   background: #2f8bb2;
-   position: fixed;
+   position: sticky;
+   top: 0;
   }
-  .logo{
-    width: 100%;
-    line-height: 60px;
-   } 
-   .logo a {
-    font-size: 40px;
-    color: #e8eff5;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left
-  }
+  .logo img{
+    width: 100px;
+    height: 100px;
+   }
   /* This styles all <h1> headers */
   h1 {
     color: #020c13;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
   }
   
   /* This styles all paragraphs */
@@ -55,11 +44,21 @@ body {
   }
  
   nav {
-    line-height: 100px;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 15px;
-    color: #dae0e5;
+    font-size: 20px;
+    color: #0b141c;
+    background-color: #2f8bb2;
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 0.5rem;
+    align-self: center;
+    justify-self: end;
+    padding: 10px;
   }
 
   table {
@@ -79,12 +78,48 @@ body {
   }
   
   .container{
-    float: inline-end ;
-    max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
+    display: inline-block;
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #267192;
+  }
+
+  .container form input {
+    border-radius: 8px;
+    width: 100%;
+  }
+  .container form button{
+    background-color: #dae0e5;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+
+  .container form button:hover {
+    background-color: lightblue;
   }
   .map{
     width: 100%;
-    height: auto;
   }
+
+  .banner-area{
+    background-image: url(pics_for_website/headphones-6159058_1280.jpg);
+    height: 70vh;
+    width: 100%;
+  }
+  
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+    flex-wrap: wrap;
+    }
+}
+  
